@@ -77,7 +77,7 @@ public class Barang {
     }
     public Barang getById(int id){
         Barang br = new Barang();
-        ResultSet rs = DB_Helper.selectQuery("SELECT * FROM Barang "
+        ResultSet rs = DB_Helper.selectQuery("SELECT * FROM barang "
         +" WHERE id_barang = '" + id + "'");
         
         try {
